@@ -4,33 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hermes</title>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    <div class="header_intro">
+        <div class="header_intro_box">
+            <ul>
+                <li><a href="#">대한민국</a></li>
+                <li><a href="#">매장찾기</a></li>
+                <li><a href="#">고객센터</a></li> 
+            </ul>
+        </div>
+    </div>
     <header class="header">
+        <div class="logo_box">
+            <a href="#">
+                <div class="logo">
+                      <img src="https://www.hermes.com/sites/all/themes/custom/hermes/img/hermes-logo.svg" alt="">
+                  </div>
+             </a>
+        </div>
         <div class="header_box">
           <nav class="nav_bar">
               <ul class="nav_list">
                   <li class="nav_item">
+                      <span><i class="fas fa-bars"></i></span>
                       <a href="#">메뉴</a>
                   </li>
-                  <li class="nav_item"><a href="#">
-                      <input type="text" text="검색">
-                  </a></li>
                   <li class="nav_item">
-                      <a href="#">
-                        <div class="logo">
-                              <img src="https://www.hermes.com/sites/all/themes/custom/hermes/img/hermes-logo.svg" alt="">
-                          </div>
-                     </a>
-                </li>
-                  <li class="nav_item"><a href="#">로그인</a></li>
-                  <li class="nav_item"><a href="#">장바구니</a></li>
+                      <div class="form_box">
+                        <form action="">
+                            <input type="text" placeholder="검색">
+                              <span><i class="fas fa-search"></i></span>
+                        </form>
+                        <div class="search_box">
+                            <ul class="search_box_list">
+                                <li class="search_box_item"><a href="#">추천검색</a></li>
+                                <li class="search_box_item"><a href="#">Oran 샌들링크</a></li>
+                                <li class="search_box_item"><a href="#">Jumping 부츠링크</a></li>
+                                <li class="search_box_item"><a href="#">2020 프리폴 컬렉션 in 여성 (155)상품 링크</a></li>
+                                <li class="search_box_item"><a href="#">여성복 in 여성 (155)상품 링크</a></li>
+                                <li class="search_box_item"><a href="#">워치 in 여성 (191)</a></li>
+                            </ul>
+                        </div>
+                      </div>
+                  </li>
+                  
+
+
+
+
+                  <li class="nav_item">
+                      <span><i class="far fa-user"></i></span>
+                      <a href="#">로그인</a></li>
+                  <li class="nav_item">
+                      <span><i class="fas fa-shopping-bag"></i></span>
+                      <a href="#">장바구니</a></li>
               </ul>
           </nav>  
         </div>
     </header>
+
 </body>
 </html>

@@ -12,28 +12,13 @@ a {
   color: inherit;
   text-decoration: none;
 }
-.header {
-  width: 100%;
+.fas {
+  font-size: 20px;
 }
-.header_box {
-  width: 100%;
-  max-width: 1600px;
-  width: 90%;
-
-  margin: 0 auto;
+.header * {
+  color: #696969;
 }
 
-.nav_list {
-  display: flex;
-  border: 1px solid blue;
-  justify-content: center;
-  justify-content: space-between;
-}
-.nav_list > .nav_item {
-  justify-content: center;
-  border: 1px solid red;
-  flex: 1;
-}
-.nav_list > .nav_item:nth-child(3) {
-  width: 60%;
+.header ul > li {
+  font-size: 14px;
 }
