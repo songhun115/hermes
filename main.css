@@ -1,8 +1,16 @@
+
+.con {
+  max-width: 1250px;
+  margin: 0 auto;
+  margin-top: 0;
+  width: 100%;
+}
 .section {
   max-width: 1250px;
-  margin: 75px auto;
+  margin: 0 auto;
+  padding: 60px 200px;
+  box-sizing: border-box;
   width: 100%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,8 +22,10 @@
 }
 .section_text * {
   color: #444444;
+  text-align: center;
 }
 .content_intro {
+  margin: 0;
   font-size: 32px;
 }
 .content_sub_text {
@@ -27,7 +37,118 @@
 .section2_img_list {
   display: flex;
 }
-.section2_img_list > .section2_img_item {
-  padding: 10px 20px;
-  width: 25%;
+/* section1 Start */
+.section1 {
+  width: 100%;
 }
+.section_img {
+  width: 100%;
+}
+.img_box {
+  width: 100%;
+}
+/* section1 End */
+
+/* section2 Start */
+.section2_img_list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+ .section_img > .img_box > .section2_img_list > .section2_img_item {
+  margin: 10px 0;
+  flex-wrap: wrap;
+  width:calc(100% / 4 - (40px * (4 - 1) / 4));
+}
+
+.section2_img_list > .section2_img_item > img {
+  width: 100%;
+  display: block;
+  background: no-repeat/cover;  
+}
+
+.section2 >.section_img > .img_box >.section2_img_list > .section2_img_item:not(:nth-child(4n)) {
+  margin-right:40px;
+  
+}
+.img_box {
+  width: 100%;
+}
+.img_box > img {
+  width: 100%;
+}
+.section2_img_list > .section2_img_item > span {
+  margin: 10px 0 10px 0;
+  display: block;
+}
+.section2 {
+  padding: 40px 0;
+}
+/* section2 End */
+
+/* section 3 Strat */
+.section3{
+  background-color: #fffcf7;
+}
+/* section 3 End */
+
+/* section 4 Strat */
+.section4 {
+  padding: 120px 0;
+  box-sizing: border-box;
+}
+.section4 > .section_img > .img_box {
+  display: flex;
+}
+.section4 > .section_img > .img_box > ul:first-child {
+  width: 50%;
+  margin-right: 120px;
+}
+.section4 > .section_img > .img_box > ul:first-child > li {
+  width: 100%;
+}
+.section4 > .section_img > .img_box > ul:first-child > li {
+  width: 100%;
+  object-fit: cover;
+}
+.section4 > .section_img > .img_box > ul:first-child > li > img {
+  width: 100%;
+  height: auto;
+}
+.section4 > .section_img > .img_box > .section2_img_list {
+  height: 600px;
+  position: relative;
+}
+
+.section4 > .section_img > .img_box > .section2_img_list > .section2_img_item {
+  width: 40%;
+  position: absolute;
+}
+.section4 > .section_img > .img_box > .section2_img_list > .section2_img_item:nth-child(2),
+.section4 > .section_img > .img_box > .section2_img_list > .section2_img_item:nth-child(4){
+  right: 0;
+}
+.section4 > .section_img > .img_box > .section2_img_list > .section2_img_item:nth-child(3),
+.section4 > .section_img > .img_box > .section2_img_list > .section2_img_item:nth-child(4){
+  margin-top: 60%;
+}
+.section4 >.section_img > .img_box > .section2_img_list > .section2_img_item:not(:nth-child(2n)) {
+  margin-right:40px;
+}
+
+.section4 > .section_img > .img_box > .section2_img_list > .section2_img_item > p {
+  margin: 0;
+}
+.section4 > .section_img > .img_box > .section2_img_list > .section2_img_item > span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* section 4 End */
+
+/* section 5 Start */
+.section5{
+  background-color: #fffcf7;
+  padding: 60px 200px;
+}
+/* section 5 End */

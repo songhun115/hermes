@@ -6,6 +6,8 @@ body {
   position: relative;
   height: 75px;
   position: fixed;
+  top:0;
+  left:0;
 }
 .section1 {
   margin-top: 75px;
