@@ -1,40 +1,24 @@
-gsap.from('.section2 > .section_text ', {
+// 스크롤 트리거 플러그인 활성화 
+gsap.registerPlugin(ScrollTrigger);
+var tl1 = gsap.timeline();
+
+tl1.from(".section2 > .section_text > .content_intro",{
   scrollTrigger:{
-    trigger:".section2 > .section_text",
-    markers:true,
-    end:"bottom 10%"
+    trigger:".section2 > .section_text > .content_intro",
+  },
+  y:200
+});
+
+var tl2 = gsap.timeline();
+tl2.from(".section2 > .section_img > .img_box > .section2_img_list > .section2_img_item",{
+  scrollTrigger:{
+    trigger:".section2 > .section_text > .content_intro",
+    markers:true
   },
   y:200,
-  duration:0.3
-  });
-
-
-var tl = gsap.timeline({
-  scrollTrigger:{
-    markers:true,
-    end:"bottom 10%",
-  },
-  repeatDelay:1
-});
-
-tl.from(".section2_img_item", {
-  scrollTrigger:{
-    trigger:".section2_img_item",
-    markers:true,
-    end:"bottom 10%",
-  },
-  y:300,
-    duration:1,
-    stagger:0.1
-});
-
-gsap.from('.section4 > .section_text ', {
-  scrollTrigger:{
-  trigger:".section4 > .section_text",
-  markers:true,
-  end:"bottom 10%",
-  },
-  y:200,
-    duration:0.3
-});
+  duration:1,
+  stagger:{
+    amount:1.5
+  }
+})
 
