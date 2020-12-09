@@ -274,3 +274,7 @@
 .section2 > .section_text > .content_intro {
   padding: 0 0 20px 0;
 }
+
+.section2_img_item > p {
+  font-size: 12px;
+}
